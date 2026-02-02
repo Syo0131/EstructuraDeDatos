@@ -1,4 +1,4 @@
-package EstructuraDeDatos.arreglosunidimensionales;
+package arreglosunidimensionales;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

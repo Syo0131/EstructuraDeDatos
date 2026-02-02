@@ -1,4 +1,4 @@
-package EstructuraDeDatos.arreglosunidimensionales;
+package arreglosunidimensionales;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
