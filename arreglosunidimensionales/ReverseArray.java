@@ -1,4 +1,4 @@
-package EstructuraDeDatos;
+package EstructuraDeDatos.arreglosunidimensionales;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -7,16 +7,14 @@ import java.util.Scanner;
 
 public class ReverseArray {
     public static void main(String[] args) {
-       
-        Scanner  sc =  new Scanner(System.in);
+
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Ingrese 6 numeros: ");
 
+        List<Integer> reverse = new ArrayList<>();
 
-        List<Integer> reverse =  new ArrayList<>();
-        
-        
-        for (int i =  0; i < 6; i++){
+        for (int i = 0; i < 6; i++) {
             int num = 0;
             boolean validInput = false;
             while (!validInput) {
@@ -28,7 +26,7 @@ public class ReverseArray {
                     System.out.println("Entrada invalida. Por favor, ingrese solo numeros enteros.");
                     sc.next();
                 }
-                
+
             }
 
             reverse.add(num);

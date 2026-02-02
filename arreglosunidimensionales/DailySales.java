@@ -1,4 +1,4 @@
-package EstructuraDeDatos;
+package EstructuraDeDatos.arreglosunidimensionales;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -8,18 +8,17 @@ import java.util.Scanner;
 
 public class DailySales {
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
         List<Integer> sales = new ArrayList<>();
 
         System.out.println("Ingrese sus ventas de los ultimos 7 dias");
 
-
         double sum = 0;
         int maxSalesDay = 0;
         int maxSalesDayIndex = 0;
 
-        for(int i = 0; i < 7; i++){
+        for (int i = 0; i < 7; i++) {
             int num = 0;
 
             boolean validInput = false;
@@ -38,24 +37,21 @@ public class DailySales {
             sales.add(num);
             sum += num;
 
-            if(num > maxSalesDay){
+            if (num > maxSalesDay) {
                 maxSalesDay = num;
                 maxSalesDayIndex = i;
             }
         }
 
-
         double avgSales = sum / sales.size();
 
         DecimalFormat df = new DecimalFormat("#.##");
-        
+
         System.out.println("Total de ventas: " + sum);
         System.out.println("Promedio de ventas diario: " + df.format(avgSales));
-        System.out.println("Dia con mas ventas: Dia "+ (maxSalesDayIndex + 1) +" con " + maxSalesDay);
+        System.out.println("Dia con mas ventas: Dia " + (maxSalesDayIndex + 1) + " con " + maxSalesDay);
 
-        
         scan.close();
 
-        
     }
 }

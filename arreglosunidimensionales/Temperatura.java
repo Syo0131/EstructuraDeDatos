@@ -1,4 +1,4 @@
-package EstructuraDeDatos;
+package EstructuraDeDatos.arreglosunidimensionales;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -27,7 +27,7 @@ public class Temperatura {
             // Validate user input
             while (!validInput) {
                 try {
-                    System.out.print("Número " + (i + 1) + ": ");
+                    System.out.print("Temperatura " + (i + 1) + ": ");
                     num = scan.nextInt();
                     validInput = true;
                 } catch (InputMismatchException e) {
